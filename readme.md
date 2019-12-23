@@ -4,6 +4,7 @@
 - Python 3.7.5
 - Fast APi
 - Graphene Python
+-uvicorn
 
 ## TODO
 - Add persistance
