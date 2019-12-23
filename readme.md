@@ -4,7 +4,7 @@
 - Python 3.7.5
 - Fast APi
 - Graphene Python
-- uvicorn
+- Uvicorn
 
 ## Get Started
 - Install Fast api, Uvicorn and Graphene python
