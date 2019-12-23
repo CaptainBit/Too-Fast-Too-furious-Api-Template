@@ -1,7 +1,11 @@
 import graphene
+from person import Person, PersonInput
 
-class Query(graphene.ObjectType):
-    hello = graphene.String(description='A typical hello world')
+class PersonQuery(graphene.AbstractType):
+    findPerson = graphene.String(description= 'find person by name', name=graphene.String())
 
-    def resolve_hello(self, info):
-        return 'World'
+    def resolve_findPerson(self, info, name):
+        return 'Bye ' + name
+
+class Query(PersonQuery, graphene.ObjectType):
+    pass
